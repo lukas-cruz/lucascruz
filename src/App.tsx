@@ -153,11 +153,11 @@ export default function App() {
               className="relative hidden lg:block"
             >
               <div className="relative z-10">
-                <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 bg-slate-900 group">
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-slate-900 group">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" 
+                    src="/src/perfil.jpg..jpeg" 
                     alt="Lucas Cruz" 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover transition-all duration-700"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
