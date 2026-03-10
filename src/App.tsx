@@ -113,7 +113,7 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -150,7 +150,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
-              className="relative hidden lg:block"
+              className="relative hidden md:block"
             >
               <div className="relative z-10">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-slate-900 group">
