@@ -155,7 +155,7 @@ export default function App() {
               <div className="relative z-10">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 bg-slate-900 group">
                   <img 
-                    src="/src/perfil.jpg..jpeg" 
+                    src="https://hmiujiuiaauuc62r.public.blob.vercel-storage.com/perfil.jpg..jpeg" 
                     alt="Lucas Cruz" 
                     className="w-full h-full object-cover transition-all duration-700"
                     referrerPolicy="no-referrer"
