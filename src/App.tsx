@@ -208,12 +208,24 @@ export default function App() {
       <section id="habilidades" className="py-24 bg-slate-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {['React', 'Next.js', 'TypeScript', 'Tailwind', 'Node.js', 'Framer Motion'].map((skill) => (
-              <div key={skill} className="flex flex-col items-center gap-3 group">
+            {[
+              { name: 'React', slug: 'react', color: '61DAFB' },
+              { name: 'Next.js', slug: 'nextdotjs', color: 'FFFFFF' },
+              { name: 'TypeScript', slug: 'typescript', color: '3178C6' },
+              { name: 'Tailwind', slug: 'tailwindcss', color: '06B6D4' },
+              { name: 'Node.js', slug: 'nodedotjs', color: '339933' },
+              { name: 'Framer Motion', slug: 'framer', color: '0055FF' }
+            ].map((skill) => (
+              <div key={skill.name} className="flex flex-col items-center gap-3 group">
                 <div className="w-16 h-16 rounded-2xl bg-slate-800 border border-white/5 flex items-center justify-center group-hover:border-cyan-500/50 group-hover:bg-slate-800/50 transition-all duration-300">
-                  <Cpu className="w-8 h-8 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+                  <img 
+                    src={`https://cdn.simpleicons.org/${skill.slug}/${skill.color}`} 
+                    alt={skill.name}
+                    className="w-8 h-8 opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
-                <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">{skill}</span>
+                <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">{skill.name}</span>
               </div>
             ))}
           </div>
