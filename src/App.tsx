@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 
 import { AISearch } from './components/AISearch';
+import { InfoBar } from './components/InfoBar';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -75,6 +76,8 @@ export default function App() {
           </div>
         </div>
 
+        <InfoBar />
+
         {/* Mobile Nav */}
         {isMenuOpen && (
           <motion.div 
@@ -104,7 +107,7 @@ export default function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-cyan-500/5 to-transparent" />
